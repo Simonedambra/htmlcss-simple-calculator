@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.flex {
+    display: flex;
+}
+
+.center {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.flex-container {
+    height: 1000px;
+    background-color: brown;
+}
+
+.container {
+    flex-flow: column wrap;
+    height: 450px;
+    width: 300px;
+    border-radius: 10px;
+    background-color: blue;
+}
+
+.p-titolo {
+    height: 70px;
+    width: 100%;
+    background-color: rgb(198, 198, 198);
+    border-radius: 10px 10px 0px 0px;
+}
+
+.text {
+    font-family: ;
+}
+
+.number0 {
+    height: 70px;
+    width: 100%;
+    background-color: black;
+}
