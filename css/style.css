@@ -4,12 +4,20 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
+}
+
 .flex {
     display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
 .center {
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
 
@@ -17,11 +25,10 @@
 
 .flex-container {
     height: 1000px;
-    background-color: brown;
 }
 
 .container {
-    flex-flow: column wrap;
+    flex-flow: row wrap;
     height: 450px;
     width: 300px;
 }
@@ -37,9 +44,6 @@
     border-radius: 10px 10px 0px 0px;
 }
 
-.text {
-    font-family: ;
-}
 
 .number0 {
     height: 70px;
@@ -50,12 +54,40 @@
 .backgroud-number {
     height: 68%;
     width: 100%;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(123, 87, 87);
     border-radius: 0px 0px 10px 10px;
 }
 
 .number {
+    flex-flow: row wrap;
     height: 100%;
-    width: 75%;
+    width: 73%;
     background-color: aqua;
+    padding: 5px;
+}
+
+.number1 {
+
+    flex-flow: row wrap;
+    height: 100%;
+    width: 20%;
+    background-color: prgb(22, 26, 26);
+    padding: 10px;
+    justify-content: left;
+}
+
+
+
+
+.cell {
+    flex-direction: row;
+    height: 60px;
+    width: 60px;
+    margin: 3px;
+    border: 1px solid black;
+    vertical-align: middle;
+}
+
+.cell-1 {
+    flex-grow: calc(1);
 }
